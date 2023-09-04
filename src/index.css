@@ -3,9 +3,37 @@
 @tailwind utilities;
 
 body{
-    background: black;
     color: white;
+    background: black;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .card{
-    background: rgb(19, 19, 19);
+   background: rgb(19, 19, 19);
 }
+.header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #170027, #200a35);
+    background-size: 800% 800%;
+    animation: gradientAnimation 5s ease infinite; 
+    width: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+}
+
+
+
