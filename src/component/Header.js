@@ -45,17 +45,17 @@ const Header = () => {
 
   return (
 
-    <div className="md:text-3xl header text-xl flex justify-between px-2 py-6 items-center font-bold text-purple-500">
+    <div className="md:text-3xl header text-2xl flex justify-between px-2 py-6 items-center font-bold text-purple-500">
       <Link to={'/'}>
         <span>Screen<span className='text-white'>Craze</span></span>
       </Link>
-      <div className="flex items-center space-x-1 md:space-x-3">
+      <div className="flex items-center space-x-3">
         {isLoggedIn ?
           <>
             <Link to={'/addmovie'}>
               <button className="bg-purple-600 hover:bg-purple-700 text-white active:bg-purple-900 md:px-2 px-1 py-1 font-semibold md:py-0 rounded shadow-md transition duration-300 ease-in-out">
-                <h1 className='md:text-xl text-xs flex items-center '>
-                  ADD<AiOutlinePlus className='ml-1 md:mt-1 inline rounded-md md:text-xl text-base font-bold'></AiOutlinePlus>
+                <h1 className='md:text-xl text-sm flex items-center '>
+                  ADD<AiOutlinePlus className='ml-1 md:mt-1 inline rounded-md md:text-xl text-lg font-bold'></AiOutlinePlus>
                 </h1>
               </button>
             </Link>

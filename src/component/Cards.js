@@ -28,7 +28,7 @@ const Cards = () => {
 
 
     return (
-        <div className='flex flex-wrap justify-evenly p-3 mt-2'>
+        <div className='flex flex-wrap justify-evenly pt-4 mt-2'>
             {loader ? <div className='flex flex-wrap justify-evenly'><AudioSpinner /></div> :
                 data.map((e, i) => {
                     return (

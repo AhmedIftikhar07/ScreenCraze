@@ -107,7 +107,7 @@ const Login = () => {
   return (
     <>
     <section className="text-gray-600 body-font relative flex otherBg justify-center min-h-screen">
-      <div className="container pt-20 md:mx-auto mx-3">
+      <div className="container md:pt-20 pt-5 md:mx-auto mx-3">
         <div className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto md:mr-auto w-full md:py-8 mt-8 md:mt-0">
           <h1 className="text-3xl font-bold text-white my-8 text-center">Login</h1>
           <div className={`relative mb-4 ${errors.email ? 'text-red-500' : 'text-white'}`}>
